@@ -1,0 +1,26 @@
+producto_id,nombre_producto,cantidad,escenario
+1,Laptop HP,1,compra_simple
+2,Mouse Logitech,2,compra_multiple
+3,Teclado Mecánico,1,compra_simple
+4,Monitor 24",3,compra_multiple
+5,Auriculares Gaming,1,compra_simple
+6,Webcam HD,2,compra_multiple
+7,SSD 500GB,4,compra_multiple
+8,Router WiFi 6,1,compra_simple
+1,Laptop HP,2,compra_combo
+2,Mouse Logitech,2,compra_combo
+3,Teclado Mecánico,1,compra_combo
+1,Laptop HP,5,compra_cantidad_alta
+4,Monitor 24",10,stock_limite
+5,Auriculares Gaming,3,compra_mixta
+6,Webcam HD,1,compra_mixta
+7,SSD 500GB,2,compra_mixta
+2,Mouse Logitech,1,producto_economico
+6,Webcam HD,1,producto_economico
+1,Laptop HP,1,producto_premium
+4,Monitor 24",2,producto_premium
+8,Router WiFi 6,1,producto_premium
+3,Teclado Mecánico,5,mismo_producto_multiple
+7,SSD 500GB,1,producto_mas_vendido
+2,Mouse Logitech,1,producto_mas_vendido
+5,Auriculares Gaming,1,producto_mas_vendido

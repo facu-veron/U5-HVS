@@ -1,0 +1,21 @@
+nombre,email,asunto,mensaje,tipo_consulta
+Juan Pérez,juan.perez@email.com,Consulta sobre producto,Quisiera saber si tienen stock del Mouse Logitech,producto
+María López,maria.lopez@gmail.com,Problema con mi pedido,Mi pedido no ha llegado después de 5 días,soporte
+Carlos Martínez,carlos.martinez@yahoo.com,Devolución,Necesito devolver un producto defectuoso,devolucion
+Ana García,ana.garcia@hotmail.com,Pregunta sobre envío,¿Cuánto tarda el envío a Barcelona?,envio
+Pedro Rodríguez,pedro.rodriguez@outlook.com,Garantía,¿Qué garantía tienen los productos?,garantia
+Laura Sánchez,laura.sanchez@email.com,Información técnica,Especificaciones del Laptop HP,tecnica
+Diego Fernández,diego.fernandez@gmail.com,Métodos de pago,¿Aceptan transferencia bancaria?,pago
+Carmen Díaz,carmen.diaz@yahoo.com,Factura,No recibí mi factura electrónica,facturacion
+Roberto Moreno,roberto.moreno@hotmail.com,Cambio de producto,Quiero cambiar un producto por otro,cambio
+Isabel Jiménez,isabel.jimenez@outlook.com,Descuentos,¿Tienen descuentos por compras al por mayor?,promocion
+Francisco Ruiz,francisco.ruiz@email.com,Stock,¿Cuándo tendrán stock del Monitor 24"?,stock
+Teresa Navarro,teresa.navarro@gmail.com,Compatibilidad,¿El teclado es compatible con Mac?,compatibilidad
+Miguel Romero,miguel.romero@yahoo.com,Horario de atención,¿Cuál es el horario de la tienda física?,horario
+Patricia Castro,patricia.castro@hotmail.com,Envío internacional,¿Realizan envíos a México?,internacional
+Antonio Méndez,antonio.mendez@outlook.com,Cancelación de pedido,Necesito cancelar mi pedido urgente,cancelacion
+Rosa Delgado,rosa.delgado@email.com,Recomendación,¿Qué auriculares me recomiendan para gaming?,recomendacion
+Javier Iglesias,javier.iglesias@gmail.com,Error en web,La página no carga correctamente,error_web
+Lucía Vega,lucia.vega@yahoo.com,Precio,¿El precio incluye IVA?,precio
+Sergio Santos,sergio.santos@hotmail.com,Instalación,¿Ofrecen servicio de instalación?,servicio
+Elena Ramos,elena.ramos@outlook.com,Comparación,¿Cuál es mejor: Laptop HP o Dell?,comparacion

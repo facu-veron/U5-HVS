@@ -1,0 +1,16 @@
+nombre_completo,email,telefono,direccion,ciudad,codigo_postal,metodo_pago,esperado,tipo_error
+,test@email.com,612345678,Calle Test 1,Madrid,28001,Tarjeta de Crédito/Débito,ERROR,campo_nombre_vacio
+Pedro Test,emailinvalido,612345678,Calle Test 2,Madrid,28001,PayPal,ERROR,email_invalido
+Ana Prueba,ana@test.com,,Calle Test 3,Madrid,28001,Transferencia Bancaria,ERROR,telefono_vacio
+Carlos Test,carlos@test.com,612345678,,Madrid,28001,Tarjeta de Crédito/Débito,ERROR,direccion_vacia
+Laura Prueba,laura@test.com,612345678,Calle Test 5,,28001,PayPal,ERROR,ciudad_vacia
+Diego Test,diego@test.com,612345678,Calle Test 6,Madrid,,Transferencia Bancaria,ERROR,codigo_postal_vacio
+María Prueba,maria@,612345678,Calle Test 7,Madrid,28001,Tarjeta de Crédito/Débito,ERROR,email_formato_incorrecto
+Roberto Test,roberto@test.com,abc123,Calle Test 8,Madrid,28001,PayPal,ERROR,telefono_formato_incorrecto
+Isabel Prueba,isabel@test.com,612345678,Calle Test 9,Madrid,ABCDE,Transferencia Bancaria,ERROR,codigo_postal_invalido
+,,,,,,,ERROR,todos_campos_vacios
+Test User,test@test.com,612345678,Test St 1,Test City,00000,Tarjeta de Crédito/Débito,SUCCESS,datos_minimos_validos
+Usuario Con Nombre Muy Largo Que Supera Los Límites Normales,usuario@test.com,612345678,Calle Test 10,Madrid,28001,PayPal,ERROR,nombre_muy_largo
+Test SQL'; DROP TABLE users;--,sqli@test.com,612345678,<script>alert('XSS')</script>,Madrid,28001,Transferencia Bancaria,ERROR,sql_injection_xss
+Normal User,normal@test.com,+34612345678,Calle Normal 1,Barcelona,08001,Tarjeta de Crédito/Débito,SUCCESS,telefono_formato_internacional
+Test User,test@,612345678,Calle Test,Madrid,28001,PayPal,ERROR,email_sin_dominio

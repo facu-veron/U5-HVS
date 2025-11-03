@@ -1,0 +1,17 @@
+username,password,rol,estado,resultado_esperado
+admin@techstore.com,Admin123!,administrador,activo,SUCCESS
+user1@test.com,User123!,usuario,activo,SUCCESS
+user2@test.com,Pass1234,usuario,activo,SUCCESS
+user3@test.com,Secure#456,usuario,activo,SUCCESS
+guest@test.com,Guest789,invitado,activo,SUCCESS
+manager@techstore.com,Manager!23,gerente,activo,SUCCESS
+support@techstore.com,Support456,soporte,activo,SUCCESS
+test@test.com,Test123,usuario,inactivo,BLOCKED
+,password123,usuario,activo,ERROR_USER_EMPTY
+user@test.com,,usuario,activo,ERROR_PASS_EMPTY
+wronguser@test.com,wrongpass,usuario,activo,ERROR_CREDENTIALS
+user@invalid,Pass123!,usuario,activo,ERROR_EMAIL_FORMAT
+testuser,short,usuario,activo,ERROR_PASS_TOO_SHORT
+normal@test.com,123456,usuario,activo,WEAK_PASSWORD
+secure@test.com,P@ssw0rd!2024,usuario,activo,SUCCESS
+newuser@test.com,NewUser123!,usuario,pendiente,PENDING_ACTIVATION
