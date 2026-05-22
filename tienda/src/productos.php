@@ -1,17 +1,10 @@
 <?php
 session_start();
 
-// Productos completos
-$productos = array(
-    array('id' => 1, 'nombre' => 'Laptop HP', 'precio' => 899.99, 'descripcion' => 'Laptop de alto rendimiento', 'stock' => 10),
-    array('id' => 2, 'nombre' => 'Mouse Logitech', 'precio' => 29.99, 'descripcion' => 'Mouse inalámbrico ergonómico', 'stock' => 25),
-    array('id' => 3, 'nombre' => 'Teclado Mecánico', 'precio' => 79.99, 'descripcion' => 'Teclado mecánico RGB', 'stock' => 15),
-    array('id' => 4, 'nombre' => 'Monitor 24"', 'precio' => 199.99, 'descripcion' => 'Monitor Full HD 24 pulgadas', 'stock' => 8),
-    array('id' => 5, 'nombre' => 'Auriculares Gaming', 'precio' => 59.99, 'descripcion' => 'Auriculares con micrófono', 'stock' => 20),
-    array('id' => 6, 'nombre' => 'Webcam HD', 'precio' => 49.99, 'descripcion' => 'Webcam 1080p', 'stock' => 12),
-    array('id' => 7, 'nombre' => 'SSD 500GB', 'precio' => 89.99, 'descripcion' => 'Disco sólido de alta velocidad', 'stock' => 30),
-    array('id' => 8, 'nombre' => 'Router WiFi 6', 'precio' => 129.99, 'descripcion' => 'Router de última generación', 'stock' => 5)
-);
+require_once 'config/db.php';
+
+$stmt = $pdo->query('SELECT * FROM productos WHERE activo = 1 ORDER BY id ASC');
+$productos = $stmt->fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="es">

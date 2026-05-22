@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\Facundo\\\\Desktop\\\\U5-HVS\\\\tienda\\\\src\")",
+      "Bash(Out-Null)",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\Facundo\\\\Desktop\\\\U5-HVS\\\\tienda\\\\src\\\\css\")",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\Facundo\\\\Desktop\\\\U5-HVS\\\\tienda\\\\src\\\\images\")",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\Facundo\\\\Desktop\\\\U5-HVS\\\\tienda\\\\mysql\")",
+      "Bash(Write-Host \"Directorios creados\")"
+    ]
+  }
+}

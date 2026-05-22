@@ -1,20 +1,14 @@
 <?php
 session_start();
 
-// Inicializar carrito si no existe
 if (!isset($_SESSION['carrito'])) {
     $_SESSION['carrito'] = array();
 }
 
-// Productos de ejemplo
-$productos = array(
-    array('id' => 1, 'nombre' => 'Laptop HP', 'precio' => 899.99, 'imagen' => 'laptop.jpg'),
-    array('id' => 2, 'nombre' => 'Mouse Logitech', 'precio' => 29.99, 'imagen' => 'mouse.jpg'),
-    array('id' => 3, 'nombre' => 'Teclado Mecánico', 'precio' => 79.99, 'imagen' => 'teclado.jpg'),
-    array('id' => 4, 'nombre' => 'Monitor 24"', 'precio' => 199.99, 'imagen' => 'monitor.jpg'),
-    array('id' => 5, 'nombre' => 'Auriculares Gaming', 'precio' => 59.99, 'imagen' => 'auriculares.jpg'),
-    array('id' => 6, 'nombre' => 'Webcam HD', 'precio' => 49.99, 'imagen' => 'webcam.jpg')
-);
+require_once 'config/db.php';
+
+$stmt = $pdo->query('SELECT * FROM productos WHERE activo = 1 AND destacado = 1 ORDER BY id ASC');
+$productos = $stmt->fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="es">
